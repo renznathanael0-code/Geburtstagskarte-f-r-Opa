@@ -31,7 +31,7 @@ async function initMic() {
             let average = values / dataArray.length;
 
             // Lautstärke-Schwelle fürs Pusten
-            if (average > 55) { 
+            if (average > 70) { 
                 flipCard();
             }
             requestAnimationFrame(checkVolume);
