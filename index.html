@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alles Gute, Opa!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="start-screen">
+        <div class="start-content">
+            <h1>Hallo Opa! </h1>
+            <p>Klicke auf den Button, um deine digitale Geburtstagskarte zu öffnen.</p>
+            <button id="start-btn" onclick="initMic()">Karte öffnen</button>
+        </div>
+    </div>
+
+    <div class="card-container hidden" id="main-content">
+        <div id="card" class="card">
+            
+            <div class="card-face front">
+                <h1>Alles Gute zum Geburtstag!</h1>
+                <div class="cake">🎂</div>
+                <p class="instruction">Puste jetzt kräftig gegen das Gerät, um die Kerzen auszublasen!</p>
+                
+                <button id="manual-flip-btn" onclick="flipCard()">
+                    Oder hier klicken zum Umdrehen 👆
+                </button>
+            </div>
+
+            <div class="card-face back">
+                <h2>Lieber Opa,</h2>
+                <div class="letter-content">
+                    <p>ich wünsche dir alles Gute zum Geburtstag, Gottes Segen, viel Gesundheit und alles was du so brauchen kannst. </p> <br>
+                    <p>Liebe Grüße</p>
+                    <p><strong>Dein Nathanael</strong></p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="hotel-modal" class="modal hidden">
+        <div class="modal-content">
+            <h3>🎁 Eine kleine Überraschung!</h3>
+            <p>Du kannst diese Karte auch pünktlich zur großen Feier im <strong>NH-Hotel</strong> als gedruckte Version gratis bekommen!</p>
+            <p>Schreib mir einfach eine kurze E-Mail, dann bringe ich sie dir mit.</p>
+            <button class="close-btn" onclick="closeModal()">Alles klar, danke!</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
